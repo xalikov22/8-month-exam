@@ -11,7 +11,7 @@ const About = () => {
     return (
         <>
             <main className="container mx-auto bg-white lg:px-[62px] px-[20px]">
-                <div className='pt-[100px] text-center  sm:text-[32px] font-light text-[20px] leading-10  text-[#23314e]  pb-8'>
+                <div className='sm:pt-[100px] text-center  sm:text-[32px] font-light text-[20px] leading-10  text-[#23314e]  pb-8'>
                     <p>A brand built on the love of craftmanship,<br />
                         quality and outstanding customer service</p>
                 </div>

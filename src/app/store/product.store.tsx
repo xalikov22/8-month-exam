@@ -1,7 +1,7 @@
 import { produckttype } from "@/components/produckt.type";
 import axios from "axios";
 import { create } from "zustand";
-// import { produckttype } from "./components/produckt.type";
+
 
 export const getProducts = create<produckttype>((set) => ({
     loading: false,

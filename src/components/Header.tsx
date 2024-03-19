@@ -3,6 +3,7 @@ import React, { useState, useEffect, Fragment } from "react"
 import { IoIosSearch } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegUserCircle } from "react-icons/fa";
+import { Sling as Hamburger } from 'hamburger-react'
 import Link from "next/link";
 const Header = () => {
 
@@ -36,12 +37,12 @@ const Header = () => {
 
 
                         <div className="flex gap-4  items-center">
-                            <div className="sm:flex gap-4 hidden">
+                            <div className="sm:flex gap-4 hidden text-[#2A254B]">
 
                                 <Link href='/'><p>Home</p></Link>
                                 <Link href='/about'><p>About us</p></Link>
-                                <Link href='/producs'><p>Blog</p></Link>
-                                <Link href='/contact'><p>Contact</p></Link>
+                                <Link href='/producs'><p>All Product</p></Link>
+                                {/* <Link href='/contact'><p>Contact</p></Link> */}
 
                             </div>
                             <IoIosSearch className="block md:hidden  w-[28px] h-[28px] cursor-pointer  text-[#22202E] hover:text-slate-950" />
@@ -54,7 +55,7 @@ const Header = () => {
                                 onClick={handleClick}
                                 className="pt-2 flex-col gap-1 justify-center items-center block md:hidden w-[32px] h-[32px] cursor-pointer  text-[#22202E] hover:text-slate-950"
                             >
-                                *
+                                <span><Hamburger /> </span>
                             </button>
 
                         </div>
@@ -110,7 +111,13 @@ const Header = () => {
                             : "-translate-x-[420px] transation duration-400 ease-linier  "
                             } absolute top-0 left-0 h-screen w-[50vw] bg-slate-900  z-50 transation duration-500 ease-linear md:hidden shadow-md`}
                     >
-                        <p>+++</p>
+                        <div className="flex flex-col text-center pt-[30px] gap-3 text-white ">
+
+                            <Link href='/'>Home</Link>
+                            <Link href='/about'>About Us</Link>
+                            <Link href='/product'>All Product</Link>
+                            {/* <Link href='/cart'>Contact</Link> */}
+                        </div>
                     </div>
                 </div>
             </div>

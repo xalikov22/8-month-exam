@@ -5,7 +5,7 @@ export type productstype = {
     image: string,
     description: string,
     sale: string,
-    // createdAt:string
+
 
 }
 
